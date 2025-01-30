@@ -158,7 +158,11 @@ const about = {
     institutions: [
       {
         name: "Valdosta State University",
-        description: <>Studied business and computer science.</>,
+        description: <>Bachelor's Degree in Business & Computer Science</>,
+      },
+      {
+        name: "Scrum Alliance",
+        description: <>Certified Scrum Product Owner</>,
       },
     ],
   },
