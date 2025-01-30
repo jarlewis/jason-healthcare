@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Product Manager and Creative Consultant",
+  role: "Product Manager and Consultant",
   avatar: "/images/avatar.jpg",
   location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Spanish(Classroom)"], // optional: Leave the array empty if you don't want to display languages
@@ -56,7 +56,7 @@ const home = {
   headline: <>Product manager and creative</>,
   subline: (
     <>
-      I'm Jarell, a <InlineCode>product manager</InlineCode> and <InlineCode>business consultant</InlineCode> I build my own projects but I'm not a developer. 
+      I'm Jarell, a <InlineCode>product manager</InlineCode>, <InlineCode>business consultant</InlineCode> and <InlineCode>Creative</InlineCode> I build my own projects but I'm not a developer. 
     </>
   ),
 };
