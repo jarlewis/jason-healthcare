@@ -61,7 +61,7 @@ const home = {
 };
 
 const about = {
-  label: "About",
+  label: "Professional ",
   title: "About me",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -225,7 +225,7 @@ const blog = {
 };
 
 const work = {
-  label: "Work",
+  label: "Personal Projects",
   title: "My projects",
   description: `Side projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
