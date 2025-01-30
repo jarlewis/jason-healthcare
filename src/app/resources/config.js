@@ -15,15 +15,15 @@ const protectedRoutes = {
 };
 
 const style = {
-  theme: "dark", // dark | light
-  neutral: "gray", // sand | gray | slate
-  brand: "emerald", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "orange", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  solid: "contrast", // color | contrast
-  solidStyle: "flat", // flat | plastic
-  border: "playful", // rounded | playful | conservative
-  surface: "translucent", // filled | translucent
-  transition: "all", // all | micro | macro
+  theme: "dark",
+  neutral: "slate",
+  brand: "blue",     // Changed from 'emerald' to 'blue'
+  accent: "cyan",    // Changed from 'orange' to 'cyan' for a cohesive blue theme
+  solid: "color",    // Changed from 'contrast' to 'color' to emphasize the blue
+  solidStyle: "flat",
+  border: "playful",
+  surface: "translucent",
+  transition: "all",
 };
 
 const effects = {
@@ -42,7 +42,7 @@ const effects = {
     tilt: 0,
     colorStart: "brand-background-strong",
     colorEnd: "static-transparent",
-    opacity: 50,
+    opacity: 70,    // Increased from 50 to 70 for stronger blue effect
   },
   dots: {
     display: true,
