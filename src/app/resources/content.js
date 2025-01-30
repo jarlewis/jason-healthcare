@@ -80,7 +80,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Jarell is an Atlanta-based product manager with a passion for transforming userr experiences and 
+        Jarell is an Atlanta-based product manager with a passion for transforming user experiences and 
         business processes through the adoption of innovative and new technologies. His work spans digital interfaces, interactive
         experiences, and the convergence of CX and technology.
       </>
@@ -100,7 +100,7 @@ const about = {
           </>,
           <>
             Spearheaded the integration of AI tools into business workflows, enabling companies to
-            optimize their business proceesses 50% faster.
+            optimize their business processes by 50%.
           </>,
         ],
         images: []
