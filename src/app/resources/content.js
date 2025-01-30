@@ -13,7 +13,7 @@ const person = {
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -49,13 +49,14 @@ const social = [
 ];
 
 const home = {
+  display: false,
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my experience as a ${person.role}`,
   headline: <>Product manager and creative</>,
   subline: (
     <>
-      I'm Jarell, a <InlineCode>product manager</InlineCode> and business consultant. I build my own projects but I'm not a developer. 
+      I'm Jarell, a <InlineCode>product manager</InlineCode> and <InlineCode>business consultant</InlineCode> I build my own projects but I'm not a developer. 
     </>
   ),
 };
