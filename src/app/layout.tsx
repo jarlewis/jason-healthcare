@@ -83,6 +83,15 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       data-border={style.border}
       data-surface={style.surface}
       data-transition={style.transition}
+      data-theme="dark"
+      data-brand="blue"
+      data-accent="blue"
+      data-neutral="slate"
+      data-border="playful"
+      data-solid="color"
+      data-solid-style="flat"
+      data-surface="filled"
+      data-transition="all"
       className={classNames(
         primary.variable,
         secondary ? secondary.variable : "",

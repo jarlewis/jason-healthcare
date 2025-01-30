@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Jarell",
+  lastName: "Lewis",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Product Manager",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Spanish(Classroom)"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about product and new technologies that I learn about by sharing thoughts on the intersection of
+      creativity and technology.
     </>
   ),
 };
@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/jarlewis",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/jarelllewis",
   },
   {
     name: "X",
@@ -44,19 +44,18 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:jarell.lewis@gmail.com",
   },
 ];
 
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  description: `Portfolio website showcasing my experience as a ${person.role}`,
+  headline: <>Product manager and creative</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Jarell, a <InlineCode>product manager</InlineCode> and business consultant. I build my own projects but I'm not a developer. 
     </>
   ),
 };
@@ -74,16 +73,16 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/jarlewis",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Jarell is an Atlanta-based product manager with a passion for transforming userr experiences and 
+        business processes through the adoption of innovative and new technologies. His work spans digital interfaces, interactive
+        experiences, and the convergence of CX and technology.
       </>
     ),
   },
@@ -92,58 +91,73 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Freelance",
+        timeframe: "2024 - Present",
+        role: "Business Consultant",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Created marketing strategies for local businessees through the use of AI tools and detailed analytics.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Spearheaded the integration of AI tools into business workflows, enabling companies to
+            optimize their business proceesses 50% faster.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: []
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Inspire Brands",
+        timeframe: "2023 - 2024",
+        role: "Digital Product Manager, Customer Care",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Formulated a roadmap for leveraging machine learning models to enable proactive customer support 
+            through predictive insights, aimed at reducing customer reliance on live support.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+            Designed and categorized a knowledge base system to enhance self-service capabilities and improve 
+            customer satisfaction scores by 20%.
+          </>,         
+          <>
+            Utilized wireframing and UI mockups to prioritize consumer needs and customer journeys, aimed in a
+            15% improvement in customer support experiences.
+          </>
         ],
-        images: [],
+        images: []
       },
-    ],
+      {
+        company: "CallRail Inc",
+        timeframe: "2017 - 2023",
+        role: "Product Specialist > Product Support Engineer > Product Manager",
+        achievements: [
+          <>
+            Improved legacy source code to reduce system faults, ensuring a stable and innovative product 
+            environment for real-time VOIP communications.
+          </>,
+          <>
+            Created and updated workflows and training materials, ensuring readiness for new operational 
+            processes and API product enhancements.
+          </>,         
+          <>
+            Led cross-functional initiatives to integrate customer feedback into the development lifecycle,
+            resulting in a improvement in product the feedback to product deveelopment lifecycle.
+          </>,
+          <>
+            Developed custom API scripts using REST API, standardizing processes for Partnership Sales and 
+            Customer Success teams, reducing internal workflow timelines by 30%.
+          </>
+        ],
+        images: []
+      }
+    ]
   },
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Valdosta State University",
+        description: <>Studied business and computer science.</>,
       },
     ],
   },
@@ -152,44 +166,59 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Prompt Engineering",
+        description: <>Able to create prompts using generative AI technologies to create the desired result with minimal effort.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+           
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Development + Coding",
+        description: <>Using AI coding tools to build next gen apps with Javascript + Ruby on Rails + Next.js + Tailwind + Supabase. Some SQL experience</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            // src: "/images/projects/project-01/cover-04.jpg",
+            // alt: "Project image",
+            // width: 16,
+            // height: 16,
           },
         ],
       },
-    ],
+      {
+      title: "Postman + Rest APIs",
+      description: <>Proficient in using Postman for API testing, documentation, and automation. Experienced in creating and managing API collections, writing test scripts, and troubleshooting API .</>,
+      // optional: leave the array empty if you don't want to display images
+      images: [
+        {
+        },
+      ],
+    },
+    {
+      title: "Project Management",
+      description: <> Leveraging a comprehensive tech stack for product development and analytics:
+      JIRA for agile project management and sprint planning,
+      Zendesk for customer support insights and feedback collection,
+      Pendo and Fullstory for user behavior analysis and feature adoption tracking,
+      Firebase and AWS for monitoring application performance,
+      Datadog for real-time system monitoring,
+      and Looker for data-driven decision making and KPI tracking.</>,
+      // optional: leave the array empty if you don't want to display images
+      images: [
+        {
+        },
+      ],
+    },
+  ],
   },
 };
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Blog Posts",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -198,7 +227,7 @@ const blog = {
 const work = {
   label: "Work",
   title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  description: `Side projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
@@ -210,74 +239,74 @@ const gallery = {
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
+      src: "/images/gallery/Screenshot 2024-12-13 183324.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
+      src: "/images/gallery/Screenshot 2024-12-13 183310.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-03.jpg",
+      src: "/images/gallery/InspireB_Roll.mp4",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-04.jpg",
+      src: "/images/gallery/Screenshot 2024-12-13 183251.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-05.jpg",
+      src: "/images/gallery/ComfyUI_00077_.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-06.jpg",
+      src: "/images/gallery/Screenshot 2024-12-13 183242.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Gen-3+Alpha+Turbo+3425129327,+Cropped+-+MarkuryFLU.mp4",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/ComfyUI_00007_.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-07.jpg",
+      src: "/images/gallery/ComfyUI_00090_.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-08.jpg",
+      src: "/images/gallery/ComfyUI_00008_.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/ComfyUI_00173_.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Gen-3+Alpha+2434284061,+Cropped+-+ComfyUI_00.mp4",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/Screenshot 2024-12-13 183258.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/ComfyUI_00021.jpeg",
       alt: "image",
       orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
     },
   ],
 };
