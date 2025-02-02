@@ -27,8 +27,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/jason-webster-ab3814116", // Note: You might want to update this URL to your actual LinkedIn profile
-  },
+    link:"https://www.linkedin.com/in/jason-webster-ab3814116", // Note: You might want to update this URL to your actual LinkedIn profile  },
   {
     name: "X",
     icon: "x",
