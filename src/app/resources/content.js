@@ -10,35 +10,35 @@ const person = {
   avatar: "/images/avatar.jpg",
   location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
-};
+  };
 
 const newsletter = {
   display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about product and new technologies that I learn about by sharing thoughts on the intersection of
-      creativity and technology.
     </>
   ),
 };
 
 const social = [
+  // Links are automatically displayed.
+  // Import new icons in /once-ui/icons.ts
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/jason-webster-ab3814116"
+    link: "https://www.linkedin.com/in/jason-webster-ab3814116",
   },
   {
     name: "X",
     icon: "x",
-    link: ""
+    link: "",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:thejasonwebster@gmail.com"
-  }
+    link: "mailto:thejasonwebster@gmail.com",
+  },
 ];
 
 const home = {
@@ -50,12 +50,12 @@ const home = {
   subline: (
     <>
      I'm Jason, an <InlineCode>EHR Integration Specialist</InlineCode>. I'm passionate about leveraging technology to create innovative solutions that improve lives. 
-    </>
+     </>
   ),
 };
 
 const about = {
-  label: "Professional", // removed extra space
+  label: "",
   title: "About me",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -77,7 +77,8 @@ const about = {
       I am a healthcare IT professional with a strong background in laboratory operations
       and EHR integrations. I excel at bridging the gap between technology and healthcare operations. 
       I am skilled at navigating HL7 and XML within Epic interfaces to resolve complex issues. 
-      I bring technical expertise and analytical problem-solving to drive efficiency in healthcare environments.</>
+      I bring technical expertise and analytical problem-solving to drive efficiency in healthcare environments.
+      </>
     ),
   },
   work: {
@@ -195,7 +196,7 @@ const about = {
       }
     ]
   },
-}
+};
 
 const blog = {
   label: "Blog",
@@ -207,7 +208,7 @@ const blog = {
 
 const work = {
   label: "Personal Projects",
-  title: "My Projects", // capitalized Projects
+  title: "My projects",
   description: `Side projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
