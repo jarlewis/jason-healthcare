@@ -1,10 +1,10 @@
-const baseURL = "https://jason-haelthcare.vercel.app";
+const baseURL = "https://jason-healthcare.vercel.app";
 
 const routes = {
   "/": true,
   "/about": true,
-  "/work": true,
-  "/blog": true,
+  "/work": false,  // Changed to false to hide Personal Projects
+  "/blog": false,  // Changed to false to hide Blog
   "/gallery": true,
 };
 
@@ -17,9 +17,9 @@ const protectedRoutes = {
 const style = {
   theme: "dark",
   neutral: "slate",
-  brand: "black",     // Changed from 'blue' to 'black'
-  accent: "black",   // Changed from 'cyan' to 'slate'
-  solid: "contrast", // Changed from 'color' to 'contrast' for a monochromatic look
+  brand: "neutral",     // Changed from 'blue' to 'neutral' for black theme
+  accent: "zinc",       // Changed from 'cyan' to 'zinc' for monochromatic look
+  solid: "contrast",    // Changed from 'color' to 'contrast' for black emphasis
   solidStyle: "flat",
   border: "playful",
   surface: "translucent",
@@ -40,14 +40,14 @@ const effects = {
     width: 100,
     height: 100,
     tilt: 0,
-    colorStart: "neutral-background-strong", // Changed from 'brand-background-strong'
+    colorStart: "neutral-background-strong",  // Changed from brand to neutral
     colorEnd: "static-transparent",
-    opacity: 50,    // Reduced from 70 to 50 for a more subtle effect
+    opacity: 70,
   },
   dots: {
     display: true,
     size: 2,
-    color: "brand-on-background-weak",
+    color: "neutral-on-background-weak",  // Changed from brand to neutral
     opacity: 20,
   },
   lines: {
