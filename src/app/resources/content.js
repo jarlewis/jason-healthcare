@@ -27,17 +27,18 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link:"https://www.linkedin.com/in/jason-webster-ab3814116", // Note: You might want to update this URL to your actual LinkedIn profile  },
+    link: "https://www.linkedin.com/in/jason-webster-ab3814116"
+  },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: ""
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:thejasonwebster@gmail.com",  // This is already correct
-  },
+    link: "mailto:thejasonwebster@gmail.com"
+  }
 ];
 
 const home = {
@@ -54,7 +55,7 @@ const home = {
 };
 
 const about = {
-  label: "Professional ",
+  label: "Professional", // removed extra space
   title: "About me",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -206,7 +207,7 @@ const blog = {
 
 const work = {
   label: "Personal Projects",
-  title: "My projects",
+  title: "My Projects", // capitalized Projects
   description: `Side projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
