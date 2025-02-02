@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "EHR Integration Specialist",
+  role: "EHR Integration Analyst",
   avatar: "/images/avatar.jpg",
   location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
@@ -49,7 +49,7 @@ const home = {
   headline: <>EHR Integration Specialist</>,
   subline: (
     <>
-     I'm Jason, an <InlineCode>EHR Integration Specialist</InlineCode>. I'm passionate about leveraging technology to create innovative solutions that improve lives. 
+     I'm Jason, an <InlineCode>EHR Integration Analyst</InlineCode>. I'm passionate about leveraging technology to create innovative solutions that improve lives. 
      </>
   ),
 };
