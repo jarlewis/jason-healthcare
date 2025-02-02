@@ -1,4 +1,4 @@
-const baseURL = "https://jarlewis-work.vercel.app";
+const baseURL = "https://jason-haelthcare.vercel.app";
 
 const routes = {
   "/": true,
@@ -17,9 +17,9 @@ const protectedRoutes = {
 const style = {
   theme: "dark",
   neutral: "slate",
-  brand: "blue",     // Changed from 'emerald' to 'blue'
-  accent: "cyan",    // Changed from 'orange' to 'cyan' for a cohesive blue theme
-  solid: "color",    // Changed from 'contrast' to 'color' to emphasize the blue
+  brand: "black",     // Changed from 'blue' to 'black'
+  accent: "black",   // Changed from 'cyan' to 'slate'
+  solid: "contrast", // Changed from 'color' to 'contrast' for a monochromatic look
   solidStyle: "flat",
   border: "playful",
   surface: "translucent",
@@ -40,9 +40,9 @@ const effects = {
     width: 100,
     height: 100,
     tilt: 0,
-    colorStart: "brand-background-strong",
+    colorStart: "neutral-background-strong", // Changed from 'brand-background-strong'
     colorEnd: "static-transparent",
-    opacity: 70,    // Increased from 50 to 70 for stronger blue effect
+    opacity: 50,    // Reduced from 70 to 50 for a more subtle effect
   },
   dots: {
     display: true,

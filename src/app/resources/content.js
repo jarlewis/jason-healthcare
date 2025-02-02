@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Jarell",
-  lastName: "Lewis",
+  firstName: "Jason",
+  lastName: "Webster",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Product Manager and Consultant",
+  role: "EHR Integration Specialist",
   avatar: "/images/avatar.jpg",
   location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Spanish(Classroom)"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -24,17 +24,10 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/jarlewis",
-  },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/jarelllewis",
+    link: "https://www.linkedin.com/in/jason-webster-ab3814116", // Note: You might want to update this URL to your actual LinkedIn profile
   },
   {
     name: "X",
@@ -44,7 +37,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:jarell.lewis@gmail.com",
+    link: "mailto:thejasonwebster@gmail.com",  // This is already correct
   },
 ];
 
@@ -53,10 +46,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my experience as a ${person.role}`,
-  headline: <>Product manager</>,
+  headline: <>EHR Integration Specialist</>,
   subline: (
     <>
-     I'm Jarell, a <InlineCode>Product manager</InlineCode> and I build my own projects. I'm not a developer. 
+     I'm Jason, an <InlineCode>EHR Integration Specialist</InlineCode>. I'm passionate about leveraging technology to create innovative solutions that improve lives. 
     </>
   ),
 };
@@ -74,17 +67,17 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com/jarlewis",
+    link: "https://calendly.com/thejasonwebster",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Jarell is an Atlanta-based product manager with a passion for transforming user experiences and 
-        business processes through the adoption of innovative and new technologies. His work spans digital interfaces, interactive
-        experiences, and the convergence of CX and technology.
-      </>
+      I am a healthcare IT professional with a strong background in laboratory operations
+      and EHR integrations. I excel at bridging the gap between technology and healthcare operations. 
+      I am skilled at navigating HL7 and XML within Epic interfaces to resolve complex issues. 
+      I bring technical expertise and analytical problem-solving to drive efficiency in healthcare environments.</>
     ),
   },
   work: {
@@ -92,144 +85,117 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Freelance",
-        timeframe: "2024 - Present",
-        role: "Business Consultant",
+        company: "Exact Sciences",
+        timeframe: "2022 - Present",
+        role: "EHR Integration Analyst",
         achievements: [
           <>
-            Created marketing strategies for local businesses through the use of AI tools and detailed analytics.
+            Played a key role in validating and testing new integrations, contributing to the successful deployment of multiple system upgrades while maintaining compliance with patient privacy and security standards.
           </>,
           <>
-            Spearheaded the integration of AI tools into business workflows, enabling companies to
-            optimize their business processes by 50%.
+            Successfully onboarded and integrated healthcare partners into the AURA network, streamlining result delivery and improving patient care coordination while ensuring HIPAA compliance and data security.
           </>,
         ],
         images: []
       },
       {
-        company: "Inspire Brands",
-        timeframe: "2023 - 2024",
-        role: "Digital Product Manager, Customer Care",
+        company: "Emory University",
+        timeframe: "2022 - Present",
+        role: "Histotechnologist PRN - Part-Time",
         achievements: [
           <>
-            Formulated a roadmap for leveraging machine learning models to enable proactive customer support 
-            through predictive insights, aimed at reducing customer reliance on live support.
+            Successfully prepared and processed high-quality tissue samples for diagnostic and research purposes, ensuring accuracy and adherence to strict laboratory protocols.
           </>,
           <>
-            Designed and categorized a knowledge base system to enhance self-service capabilities and improve 
-            customer satisfaction scores by 20%.
-          </>,         
+            Collaborated with pathologists and laboratory teams to prioritize workloads, maintain efficient workflows, and deliver timely results, supporting critical patient care decisions.
+          </>,
+        ],
+        images: []
+      },
+      {
+        company: "U.S. Department of Veterans Affairs",
+        timeframe: "2019 - 2022",
+        role: "Histotechnologist",
+        achievements: [
           <>
-            Utilized wireframing and UI mockups to prioritize consumer needs and customer journeys, aiming in a
-            15% improvement in customer support experiences.
+            Processed and prepared tissue specimens for microscopic examination, ensuring high-quality 
+            slides for accurate pathological diagnosis.
+          </>,       
+          <>
+            Implemented and followed strict safety protocols while handling biological specimens and 
+            hazardous materials in accordance with federal regulations.
           </>
         ],
         images: []
       },
       {
-        company: "CallRail Inc",
-        timeframe: "2017 - 2023",
-        role: "Product Specialist > Product Support Engineer > Product Manager",
+        company: "Bako Diagnostics",
+        timeframe: "2017 - 2019",
+        role: "Laboratory Assistant",
         achievements: [
           <>
-            Improved legacy source code to reduce system faults, ensuring a stable and innovative product 
-            environment for real-time VOIP communications.
+            Managed specimen collection, processing, and documentation while maintaining strict adherence to CLIA and CAP regulations, ensuring accurate patient sample handling and tracking.
           </>,
           <>
-            Created and updated workflows and training materials, ensuring readiness for new operational 
-            processes and API product enhancements.
-          </>,         
-          <>
-            Led cross-functional initiatives to integrate customer feedback into the development lifecycle,
-            resulting in an improvement in the product feedback to development lifecycle.
+            Utilized and maintained proficiency in EHR systems (VistaCPRS, Assist) for accurate patient data management and specimen tracking.
           </>,
           <>
-            Developed custom API scripts using REST API, standardizing processes for Partnership Sales and 
-            Customer Success teams, reducing internal workflow timelines by 30%.
+            Contributed to quality assurance by monitoring processes, calibrating equipment, and maintaining detailed SOPs and Chain of Custody documentation.
           </>
         ],
         images: []
-      }
-    ]
+      },
+    ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Studies & Certs",
     institutions: [
       {
-        name: "Valdosta State University",
-        description: <>Bachelor's Degree in Business & Computer Science</>,
+        name: "Harrisburg University of Science and Technology",
+        description: <>Master of Science - MS, Healthcare Informatics</>,
       },
       {
-        name: "Scrum Alliance",
-        description: <>Certified Scrum Product Owner</>,
+        name: "Valdosta State University",
+        description: <>Bachelor's Degree, Biology</>,
+      },
+      {
+        name: "Epic",
+        description: <>Bridges Certification</>,
+      },
+      {
+        name: "Rhapsody",
+        description: <>Level 1: Corepoint Integration Engine</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Prompt Engineering",
-        description: <>Able to create prompts using generative AI technologies to create the desired result with minimal effort.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-           
-          },
-        ],
+        title: "Healthcare Integration Technologies",
+        description: <>Expertise in HL7 interfaces, Epic Bridges integration engine, and Corepoint Integration Engine for seamless healthcare data exchange and system interoperability.</>,
+        images: [{}],
       },
       {
-        title: "Development + Coding",
-        description: <>Using AI coding tools to build next gen apps with Javascript + Ruby on Rails + Next.js + Tailwind + Supabase. Some SQL experience</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            // src: "/images/projects/project-01/cover-04.jpg",
-            // alt: "Project image",
-            // width: 16,
-            // height: 16,
-          },
-        ],
+        title: "Healthcare Analytics",
+        description: <>Proficient in Tableau for healthcare data visualization and analytics, combined with strong medical terminology knowledge for accurate data interpretation and reporting.</>,
+        images: [{}],
       },
       {
-        title: "Postman + Rest APIs",
-        description: <>Proficient in using Postman for API testing, documentation, and automation. Experienced in creating and managing API collections, writing test scripts, and troubleshooting APIs.</>,
+        title: "Healthcare Systems & Tools",
+        description: <>Experienced with Epic Bridges, Beaker, and Vista CPRS. Proficient in laboratory report printing, data collection, and system migration.</>,
+        images: [{}],
       },
       {
-        title: "Project Management",
-        description: <> Leveraging a comprehensive tech stack for product development and analytics:
-        JIRA for agile project management and sprint planning,
-        Zendesk for customer support insights and feedback collection,
-        Pendo and Fullstory for user behavior analysis and feature adoption tracking,
-        Firebase and AWS for monitoring application performance,
-        Datadog for real-time system monitoring,
-        and Looker for data-driven decision making and KPI tracking.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-        },
-      ],
-    },
-    {
-      title: "Project Management",
-      description: <> Leveraging a comprehensive tech stack for product development and analytics:
-      JIRA for agile project management and sprint planning,
-      Zendesk for customer support insights and feedback collection,
-      Pendo and Fullstory for user behavior analysis and feature adoption tracking,
-      Firebase and AWS for monitoring application performance,
-      Datadog for real-time system monitoring,
-      and Looker for data-driven decision making and KPI tracking.</>,
-      // optional: leave the array empty if you don't want to display images
-      images: [
-        {
-        },
-      ],
-    },
-  ],
+        title: "Project & Documentation Tools",
+        description: <>Skilled in Microsoft Suite, Jira, and Confluence for project planning, coordination, and documentation. Strong focus on customer support and stakeholder communication.</>,
+        images: [{}],
+      }
+    ]
   },
-};
+}
 
 const blog = {
   label: "Blog",
