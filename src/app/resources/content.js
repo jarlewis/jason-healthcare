@@ -46,7 +46,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my experience as a ${person.role}`,
-  headline: <>EHR Integration Specialist</>,
+  headline: <>EHR Integration Analyst</>,
   subline: (
     <>
      I'm Jason, an <InlineCode>EHR Integration Analyst</InlineCode>. I'm passionate about leveraging technology to create innovative solutions that improve lives. 
